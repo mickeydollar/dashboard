@@ -11,14 +11,14 @@
     margin: 0 auto;
 } */
 
-header{
-    background-color: #ffff !important;
-    position: relative;
+body{
+    background-color: #ffff;
+   
     
 
     &::before {
         content: "";
-        /* background-color: #191926; */
+        
         background-color: #EFF3F9;
         width: 100%;
         position: absolute;
@@ -29,7 +29,7 @@ header{
     }
 }
 
-.navbar{
+.nav-bar{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,3 +68,19 @@ header{
 /* .boxex{
     background-color: #252A41;
 } */
+
+@media screen and (max-width: 467px){
+    .nav-bar .Switcher{
+        margin-left: 1.5rem;
+        border-top: 2px solid grey;
+        padding: 15px 0px;
+    }
+
+    .nav-bar .Switcher i{
+        position: absolute;
+        margin-top: 2.5rem;
+    }
+}
+.bi-moon{
+    color: black;
+}
